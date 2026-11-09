@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "20128:20128"
+    restart: always
+    environment:
+      - PORT=20128
